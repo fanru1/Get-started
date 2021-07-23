@@ -1,0 +1,14 @@
+text = input()
+word = input()
+
+def search(text,word):
+    mylist=text.split() # convert a string into a list
+    t=word in mylist # judge if word serves as an element in a mylist
+    u=0
+    if t==True:
+        u='found'
+    else:
+        u='not found'
+    return u
+    
+print (search(text,word))
