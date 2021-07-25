@@ -1,0 +1,9 @@
+# return a longest word in a sentence
+txt = input()
+mylist=txt.split()
+count=[]
+for i in range (len(mylist)):
+    num=len(mylist[i]) # return the length of a word
+    count.append(num)
+maximum=max(count) # return the maximum value in a list
+print (mylist[count.index(maximum)]) # count.index() return the index for a particular value
