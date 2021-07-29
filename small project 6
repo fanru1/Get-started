@@ -1,0 +1,20 @@
+num = int(input())
+
+
+def fibonacci(n):
+	if n==1:
+		print (0)
+	elif n==2:
+		print (0)
+		print (1)
+	else:
+		mylist=[0,1]
+		while n>2:
+			mylist.append(mylist[-1]+mylist[-2])
+			n-=1
+		for i in range (len(mylist)):
+			print (mylist[i])
+	return
+
+fibonacci(num)
+    
